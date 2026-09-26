@@ -8,7 +8,8 @@ $VNet = Get-AzVirtualNetwork -ResourceGroupName $ResourceGroupName -Name $VNetNa
 
 $Subnet = Get-AzVirtualNetworkSubnetConfig -Name $SubnetName -VirtualNetwork $VNet
 
-New-AzNetworkInterface -Name  $NicName `
+New-AzNetworkInterface `
+-Name  $NicName `
 -ResourceGroupName $ResourceGroupName `
 -Location $Location `
 - Subnet  $Subnet `
