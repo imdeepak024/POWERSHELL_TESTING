@@ -12,5 +12,5 @@ New-AzNetworkInterface `
 -Name  $NicName `
 -ResourceGroupName $ResourceGroupName `
 -Location $Location `
-- Subnet  $Subnet `
+-Subnet  $Subnet `
 -IpConfigurationName "ipconfig-web-001"
